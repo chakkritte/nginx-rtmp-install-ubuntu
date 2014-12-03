@@ -124,6 +124,10 @@ Installing nginx with RTMP module and PHP on ubuntu
   
   [5] [nginx-init-ubuntu](https://github.com/JasonGiedymin/nginx-init-ubuntu)
   
+  [6] [Install LEMP Server (Nginx, MySQL or MariaDB, PHP And phpMyAdmin) On Ubuntu 14.10/14.04/13.10](http://www.unixmen.com/install-lemp-server-nginx-mysql-mariadb-php-phpmyadmin-ubuntu-14-1014-0413-10/)
+  
+  
+  
   
   
 
