@@ -49,7 +49,7 @@ Installing nginx with RTMP module and PHP on ubuntu
   Play Path/Stream Key: test
   
   
-## Install PHP ##
+## Install PHP [2] [3] [4] ##
     sudo apt-get install php5-fpm
   
 ## Configure php ##
@@ -99,8 +99,11 @@ Installing nginx with RTMP module and PHP on ubuntu
     
 ## Reference ##
   [1] [How to Live Stream to Multiple Services with a RTMP Server](http://linustechtips.com/main/topic/174603-how-to-live-stream-to-multiple-services-with-a-rtmp-server/)
+  
   [2] [How To Install Linux, nginx, MySQL, PHP (LEMP) stack on Ubuntu 12.04](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-ubuntu-12-04)
+  
   [3] [Installing Nginx With PHP5 (And PHP-FPM) And MySQL Support (LEMP) On Ubuntu 14.04 LTS](http://www.howtoforge.com/installing-nginx-with-php5-fpm-and-mysql-on-ubuntu-14.04-lts-lemp)
+  
   [4] [Nginx and PHP-FPM Configuration and Optimizing Tips and Tricks](http://www.if-not-true-then-false.com/2011/nginx-and-php-fpm-configuration-and-optimizing-tips-and-tricks/)
   
 
