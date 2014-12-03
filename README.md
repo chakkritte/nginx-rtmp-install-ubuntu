@@ -6,7 +6,6 @@ Installing nginx with RTMP module and PHP on ubuntu
     sudo apt-get update
     sudo apt-get install build-essential libpcre3 libpcre3-dev libssl-dev
     
-    # download/curl/wget nginx 
     wget http://nginx.org/download/nginx-1.7.8.tar.gz
     wget https://github.com/arut/nginx-rtmp-module/archive/master.zip
     
@@ -97,6 +96,23 @@ Installing nginx with RTMP module and PHP on ubuntu
     sudo /usr/local/nginx/sbin/nginx -s stop
     sudo /usr/local/nginx/sbin/nginx
     
+## nginx-init-ubuntu [5] ##
+
+    #copy/download/curl/wget the init script
+    sudo wget https://raw.github.com/chakkritte/nginx-init-ubuntu/master/nginx -O /etc/init.d/nginx
+    sudo chmod +x /etc/init.d/nginx
+    
+    service nginx status  # to poll for current status
+    service nginx stop    # to stop any servers if any
+    service nginx start   # to start the server
+    
+    #[optional] 
+    sudo update-rc.d -f nginx defaults
+
+    #[optional remove the upstart script]
+    sudo update-rc.d -f nginx remove
+
+    
 ## Reference ##
   [1] [How to Live Stream to Multiple Services with a RTMP Server](http://linustechtips.com/main/topic/174603-how-to-live-stream-to-multiple-services-with-a-rtmp-server/)
   
@@ -105,6 +121,10 @@ Installing nginx with RTMP module and PHP on ubuntu
   [3] [Installing Nginx With PHP5 (And PHP-FPM) And MySQL Support (LEMP) On Ubuntu 14.04 LTS](http://www.howtoforge.com/installing-nginx-with-php5-fpm-and-mysql-on-ubuntu-14.04-lts-lemp)
   
   [4] [Nginx and PHP-FPM Configuration and Optimizing Tips and Tricks](http://www.if-not-true-then-false.com/2011/nginx-and-php-fpm-configuration-and-optimizing-tips-and-tricks/)
+  
+  [5] [nginx-init-ubuntu](https://github.com/JasonGiedymin/nginx-init-ubuntu)
+  
+  
   
 
   
