@@ -4,7 +4,7 @@ Installing nginx with RTMP module and PHP on ubuntu
 
 ## Basic Install [1] ##
     sudo apt-get update
-    sudo apt-get install build-essential libpcre3 libpcre3-dev libssl-dev
+    sudo apt-get install build-essential libpcre3 libpcre3-dev libssl-dev unzip
     
     wget http://nginx.org/download/nginx-1.7.8.tar.gz
     wget https://github.com/arut/nginx-rtmp-module/archive/master.zip
