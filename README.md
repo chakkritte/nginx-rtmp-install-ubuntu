@@ -13,7 +13,26 @@ Installing nginx with RTMP module and PHP on ubuntu
     unzip master.zip
     cd nginx-1.7.8
     
-    ./configure --add-module=../nginx-rtmp-module-master
+    ./configure \
+        --add-module=../nginx-rtmp-module-master  \
+        --with-http_ssl_module  \
+        --with-http_realip_module \
+        --with-http_addition_module \
+        --with-http_sub_module \
+        --with-http_dav_module \
+        --with-http_flv_module \
+        --with-http_mp4_module \
+        --with-http_gunzip_module \
+        --with-http_gzip_static_module \
+        --with-http_random_index_module \
+        --with-http_secure_link_module \
+        --with-http_stub_status_module \
+        --with-http_auth_request_module \
+        --with-mail \
+        --with-mail_ssl_module \
+        --with-file-aio \
+        --with-ipv6 \
+    
     make
     sudo make install
     
